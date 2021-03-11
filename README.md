@@ -7,4 +7,4 @@ Complete Hello Toast app"
 Completed coding challenge
 <br>
 <img src="Codechallenge_ss1.png" width="250" height="400">
-<img src="Codechallenge_ss2.png" width="250" height="400">
+<img src="Codechallenge_ss2.png" width="400" height="250">
