@@ -11,11 +11,15 @@
         android:id="@+id/button_toast"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="5dp"
         android:background="#0027FF"
         android:text="Toast"
+        app:layout_constraintBottom_toTopOf="@+id/show_count"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -23,10 +27,32 @@
         android:id="@+id/button_count"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="5dp"
         android:text="Count"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/show_count" />
+
+    <TextView
+        android:id="@+id/show_count"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:background="#FFFF00"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/purple_700"
+        android:textSize="160sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button_count"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_toast" />
 </androidx.constraintlayout.widget.ConstraintLayout>
